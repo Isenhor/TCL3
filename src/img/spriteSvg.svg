@@ -1,0 +1,10 @@
+<svg style="width:0; height:0; visibility: hidden;" xmlns="http://www.w3.org/2000/svg">
+
+<!-- Arrow Up -->
+	<symbol id="svg-up" viewBox="0 0 24 24" fill="none">
+		<g>
+			<path d="M12 20L12 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M6 10L12 4L18 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		</g>
+	</symbol>
+</svg>

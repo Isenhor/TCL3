@@ -1,0 +1,59 @@
+.header {
+  padding: 30px 0;
+  &__container {
+    align-items: center;
+    justify-content: space-between;
+    @include media(767px) {
+      width: 100%;
+    }
+  }
+}
+
+.header__img {
+  & img {
+    width: 100%;
+  }
+}
+
+.logo {
+  cursor: pointer;
+  width: 125px;
+  @include media(899px) {
+    & img {
+      width: 90px;
+    }
+  }
+}
+
+#header.fixed {
+  padding: 5px 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $accent-color;
+  transition: background-color 0.3s ease-in-out;
+  @include media(899px) {
+    display: none;
+  }
+}
+
+#header.fixed {
+  .nav__link {
+    color: #fff;
+
+    &:focus {
+      outline: none;
+      color: $active-color;
+    }
+
+    &:hover {
+      color: $dark-color;
+    }
+
+    &:active {
+      color: $active-color;
+    }
+  }
+}

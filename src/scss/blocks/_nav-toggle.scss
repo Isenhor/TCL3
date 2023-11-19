@@ -1,0 +1,66 @@
+.nav-toggle {
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  z-index: 20;
+
+  & > .menu-bar {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: $accent-color;
+    transition: 0.1s;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: $accent-color;
+      left: 0;
+      transition: 0.3s;
+    }
+
+    &::before {
+      top: -10px;
+      @include media (767px){
+        top: -7px;
+    
+      }
+    }
+
+    &::after {
+      bottom: -10px;
+      @include media (767px){
+        bottom: -7px;
+    
+      }
+    }
+  }
+
+  @include media(899px) {
+    display: flex;
+  }
+}
+
+.nav-toggle.nav-toggle--active {
+  & > .menu-bar {
+    background-color: transparent;
+
+    &::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+  }
+
+  
+}

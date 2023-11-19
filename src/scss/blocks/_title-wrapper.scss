@@ -1,0 +1,7 @@
+.title-wrapper {
+  margin-bottom: 50px;
+
+  @include media(767px) {
+    margin-bottom: 20px;
+  }
+}

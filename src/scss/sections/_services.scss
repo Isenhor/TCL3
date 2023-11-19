@@ -1,0 +1,24 @@
+.services {
+  &__list {
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include media(767px) {
+      gap: 20px;
+    }
+  }
+
+  &__item .service-card {
+    
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    
+  }
+
+  @include media(767px) {
+    padding-top: 90px;
+    margin-top: -50px;
+  }
+}

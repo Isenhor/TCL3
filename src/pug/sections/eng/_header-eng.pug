@@ -1,0 +1,21 @@
+header#header.header
+	.container.flex.header__container
+		a(href="#").logo
+			img(src="./img/logo/logo.webp", alt="TCL logo")
+		nav#menu.nav.flex(title='Main navigation')
+			ul.nav__list.flex
+				li.nav__item
+					a.nav__link(href='#about') About Us
+				li.nav__item
+					a.nav__link(href='#products') Production
+				li.nav__item
+					a.nav__link(href='#services') Services
+				li.nav__item
+					a.nav__link(href='#contacts') Contact Us
+				li.nav__item
+					a.nav__link.nav__link--lang(href='./index.html')
+						img(src="./img/icons/ru.svg", alt="Russian")
+		button.nav-toggle(type='button')
+			span.menu-bar
+.header__img
+	img(src='./img/about/about-img.webp' loading="lazy" alt='TCL Company' )

@@ -1,0 +1,26 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+
+// Base
+$main-font: "Poppins", sans-serif;
+$second-font: "Playfair Display", serif;
+
+// Colors
+$light-color: #fff;
+$dark-color: #003331;
+$accent-color: #008fd5;
+$active-color: #e00e00;
+$text-color: rgba(53, 83, 98, 0.8);
+$site-bg-color: #f8f6f6;
+
+//Font size
+$main-size: 18px;
+$second-size: 16px;
+$section-title: 46px;
+$card-text-size: 20px;
+$contacts-size: 20px;
+$subtitle-size: 28px;
+$mobile-text: 14px;
+
+// padding
+$section-padding: 70px 0;

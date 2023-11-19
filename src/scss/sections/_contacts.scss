@@ -1,0 +1,19 @@
+.contacts {
+  &__content {
+    padding-top: 40px;
+
+    @include media(899px) {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    @include media(767px) {
+      padding-top: 10px;
+    }
+  }
+
+  @include media(767px) {
+    padding-top: 90px;
+    margin-top: -50px;
+  }
+}

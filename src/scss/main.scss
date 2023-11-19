@@ -1,0 +1,25 @@
+@import "base/_var";
+@import "base/_base";
+
+//sections
+
+@import "sections/header";
+@import "sections/about";
+@import "sections/footer";
+@import "sections/products";
+@import "sections/services";
+@import "sections/contacts";
+
+//blocks
+@import "blocks/nav";
+@import "blocks/title-wrapper";
+@import "blocks/section-title";
+@import "blocks/card";
+@import "blocks/service-card";
+@import "blocks/subtitle";
+@import "blocks/address";
+@import "blocks/map";
+@import "blocks/social";
+@import "blocks/nav-toggle";
+@import "blocks/app";
+@import "blocks/back-top";

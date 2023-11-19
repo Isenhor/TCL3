@@ -1,0 +1,21 @@
+header#header.header
+	.container.flex.header__container
+		a(href="#").logo
+			img(src="./img/logo/logo.webp", alt="TCL logo")
+		nav#menu.nav.flex(title='Main navigation')
+			ul.nav__list.flex
+				li.nav__item
+					a.nav__link(href='#about') О компании
+				li.nav__item
+					a.nav__link(href='#products') Продукция
+				li.nav__item
+					a.nav__link(href='#services') Сервисы
+				li.nav__item
+					a.nav__link(href='#contacts') Контакты
+				li.nav__item
+					a.nav__link.nav__link--lang(href='./index-eng.html')
+						img(src="./img/icons/en.svg", alt="English")
+		button.nav-toggle(type='button')
+			span.menu-bar
+.header__img
+	img(src='./img/about/about-img.webp' loading="lazy" alt='Компания TCL' )

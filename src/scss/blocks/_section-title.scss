@@ -1,0 +1,25 @@
+.section-title {
+  position: relative;
+  text-align: center;
+  font-family: $second-font;
+  font-size: $section-title;
+  font-weight: 400;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -25px;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background-color: #5186e2;
+
+    @include media(767px) {
+      bottom: -10px;
+    }
+  }
+
+  @include media(767px) {
+    font-size: 36px;
+  }
+}

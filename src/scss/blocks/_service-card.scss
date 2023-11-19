@@ -1,0 +1,54 @@
+.service-card {
+  width: 290px;
+  &__img {
+    width: 200px;
+    height: 200px;
+
+    @include media(899px) {
+      width: 150px;
+      height: 150px;
+    }
+
+    @include media(767px) {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  &__title {
+    font-family: $second-font;
+    position: relative;
+    margin-bottom: 20px;
+    min-height: 56px;
+    font-size: $card-text-size;
+    text-transform: uppercase;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 2px;
+      background-color: $dark-color;
+      left: 50%;
+      top: 50px;
+      transform: translateX(-50%);
+
+      @include media(767px) {
+        display: none;
+      }
+    }
+
+    @include media(767px) {
+      min-height: unset;
+      font-size: 16px;
+    }
+  }
+
+  &__text {
+    width: 270px;
+
+    @include media(767px) {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.social {
+  &__list {
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__link {
+    display: block;
+    &:focus {
+      outline: none;
+      opacity: 0.8;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+
+  &__link img {
+    width: 42px;
+    height: 42px;
+  }
+}

@@ -1,0 +1,10 @@
+.products {
+  &__carousel {
+    padding-top: 30px;
+  }
+
+  @include media(767px) {
+    padding-top: 90px;
+    margin-top: -20px;
+  }
+}

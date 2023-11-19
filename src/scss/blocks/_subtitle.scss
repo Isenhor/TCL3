@@ -1,0 +1,8 @@
+.subtitle {
+  font-family: $second-font;
+  font-size: $subtitle-size;
+  font-weight: 700;
+  &--mb {
+    margin-bottom: 15px;
+  }
+}

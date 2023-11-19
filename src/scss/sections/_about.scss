@@ -1,0 +1,22 @@
+.about {
+  padding-top: 70px;
+  &__descr {
+    color: $dark-color;
+    font-size: $main-size;
+    line-height: 1.6;
+    letter-spacing: 0.25px;
+
+    @include media(767px) {
+      font-size: $mobile-text;
+    }
+  }
+
+  &__descr p + p {
+    margin-top: 1em;
+  }
+
+  @include media(767px) {
+    padding-top: 110px;
+    margin-top: -90px;
+  }
+}

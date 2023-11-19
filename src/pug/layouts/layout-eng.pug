@@ -1,0 +1,32 @@
+include ../mixins/mixins.pug
+block variables
+
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		meta(name="description" content="Technical Chemical Laboratories: Innovations in the chemical industry. We are a leading company in the field of chemical research and development. Our experts are working on creating advanced chemical solutions for various industries, with a focus on quality and sustainability. Partnering with us means gaining access to cutting-edge technologies and environmentally responsible solutions.")
+		
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		//====шрифты google fonts ========
+		link(rel='preconnect' href='https://fonts.googleapis.com')
+		link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+		link(href='https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@400;700&display=swap' rel='stylesheet')
+
+		link(rel="stylesheet", href="libs/owl/owl.theme.default.min.css")
+		link(rel="stylesheet", href="libs/owl/owl.carousel.min.css")
+		link(rel="stylesheet", href="css/main.css")
+		title !{title}
+		
+	body
+		
+		block content
+		
+		
+		//=============== мои скрипты ===================	
+		script(src="libs/jquery/jquery-3.7.1.min.js")
+		script(src="libs/owl/owl.carousel.min.js")
+		script(src="js/main.js")

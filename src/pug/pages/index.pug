@@ -1,0 +1,17 @@
+extends ../layouts/layout.pug
+
+block content
+	include ../sections/_header.pug
+	main 
+		include ../sections/_about.pug
+		include ../sections/_products.pug
+		include ../sections/_services.pug
+		include ../sections/_contacts.pug
+		
+	include ../sections/_footer.pug
+
+	
+	
+	
+block variables
+	-var title = "Компания TCL";
