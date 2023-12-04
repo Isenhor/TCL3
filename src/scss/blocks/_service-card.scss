@@ -22,7 +22,7 @@
     min-height: 56px;
     font-size: $card-text-size;
     text-transform: uppercase;
-
+    white-space: nowrap;
     &::after {
       content: "";
       position: absolute;

@@ -14,7 +14,6 @@
   }
   &__title {
     position: relative;
-
     min-height: 72px;
     font-size: $card-text-size;
     &:after {
@@ -30,6 +29,5 @@
   }
   &__text {
     padding: 0 20px;
-    
   }
 }
